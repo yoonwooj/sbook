@@ -209,39 +209,39 @@ html {
   left: 50%;
   width: 16px;
   height: 9px;
-  background: url(../images/theme-skechbook/icon/btn_active.png) 0 0/100% no-repeat;
+  background: url(../images/icon/btn_active.png) 0 0/100% no-repeat;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 .sketchbook__wrap .gnb .gnb__list.paper .btn {
-  background: url("../images/theme-skechbook/icon/paper.png") 0 0/100% no-repeat;
+  background: url("../images/icon/paper.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.paper.active .btn {
-  background: url("../images/theme-skechbook/icon/paper_on.png") 0 0/100% no-repeat;
+  background: url("../images/icon/paper_on.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.brush .btn {
-  background: url("../images/theme-skechbook/icon/brush.png") 0 0/100% no-repeat;
+  background: url("../images/icon/brush.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.brush.active .btn {
-  background: url("../images/theme-skechbook/icon/brush_on.png") 0 0/100% no-repeat;
+  background: url("../images/icon/brush_on.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.eraser .btn {
-  background: url("../images/theme-skechbook/icon/eraser.png") 0 0/100% no-repeat;
+  background: url("../images/icon/eraser.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.eraser.active .btn {
-  background: url("../images/theme-skechbook/icon/eraser_on.png") 0 0/100% no-repeat;
+  background: url("../images/icon/eraser_on.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.emoticon .btn {
-  background: url("../images/theme-skechbook/icon/emoticon.png") 0 0/100% no-repeat;
+  background: url("../images/icon/emoticon.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.emoticon.active .btn {
-  background: url("../images/theme-skechbook/icon/emoticon_on.png") 0 0/100% no-repeat;
+  background: url("../images/icon/emoticon_on.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.shape .btn {
-  background: url("../images/theme-skechbook/icon/shape.png") 0 0/100% no-repeat;
+  background: url("../images/icon/shape.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .gnb .gnb__list.shape.active .btn {
-  background: url("../images/theme-skechbook/icon/shape_on.png") 0 0/100% no-repeat;
+  background: url("../images/icon/shape_on.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .history {
   position: relative;
@@ -343,112 +343,112 @@ html {
   border: 2px solid #35c4ff;
 }
 .sketchbook__wrap .subMenu__list .btn.pen {
-  background: url("../images/theme-skechbook/icon/pen.png") 0 0/100% no-repeat;
+  background: url("../images/icon/pen.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.calligraphy {
-  background: url("../images/theme-skechbook/icon/calligraphy.png") 0 0/100% no-repeat;
+  background: url("../images/icon/calligraphy.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.crayon {
-  background: url("../images/theme-skechbook/icon/crayon.png") 0 0/100% no-repeat;
+  background: url("../images/icon/crayon.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.highlighter {
-  background: url("../images/theme-skechbook/icon/highlighter.png") 0 0/100% no-repeat;
+  background: url("../images/icon/highlighter.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.spray {
-  background: url("../images/theme-skechbook/icon/spray.png") 0 0/100% no-repeat;
+  background: url("../images/icon/spray.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.bucket {
-  background: url("../images/theme-skechbook/icon/bucket.png") 0 0/100% no-repeat;
+  background: url("../images/icon/bucket.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.eraser1 {
-  background: url("../images/theme-skechbook/icon/eraser1.png") 0 0/100% no-repeat;
+  background: url("../images/icon/eraser1.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.eraser2 {
-  background: url("../images/theme-skechbook/icon/eraser2.png") 0 0/100% no-repeat;
+  background: url("../images/icon/eraser2.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.eraser3 {
-  background: url("../images/theme-skechbook/icon/eraser3.png") 0 0/100% no-repeat;
+  background: url("../images/icon/eraser3.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.line {
-  background: url("../images/theme-skechbook/icon/line.png") 0 0/100% no-repeat;
+  background: url("../images/icon/line.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.rect {
-  background: url("../images/theme-skechbook/icon/rect.png") 0 0/100% no-repeat;
+  background: url("../images/icon/rect.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.circle {
-  background: url("../images/theme-skechbook/icon/circle.png") 0 0/100% no-repeat;
+  background: url("../images/icon/circle.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.ellipse {
-  background: url("../images/theme-skechbook/icon/ellipse.png") 0 0/100% no-repeat;
+  background: url("../images/icon/ellipse.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.triangle {
-  background: url("../images/theme-skechbook/icon/triangle.png") 0 0/100% no-repeat;
+  background: url("../images/icon/triangle.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.pentagon {
-  background: url("../images/theme-skechbook/icon/pentagon.png") 0 0/100% no-repeat;
+  background: url("../images/icon/pentagon.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.hexagon {
-  background: url("../images/theme-skechbook/icon/hexagon.png") 0 0/100% no-repeat;
+  background: url("../images/icon/hexagon.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.bubble {
-  background: url("../images/theme-skechbook/icon/bubble.png") 0 0/100% no-repeat;
+  background: url("../images/icon/bubble.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_01 {
-  background: url("../images/theme-skechbook/icon/sticker_01.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_01.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_02 {
-  background: url("../images/theme-skechbook/icon/sticker_02.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_02.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_03 {
-  background: url("../images/theme-skechbook/icon/sticker_03.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_03.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_04 {
-  background: url("../images/theme-skechbook/icon/sticker_04.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_04.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_05 {
-  background: url("../images/theme-skechbook/icon/sticker_05.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_05.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_06 {
-  background: url("../images/theme-skechbook/icon/sticker_06.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_06.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_07 {
-  background: url("../images/theme-skechbook/icon/sticker_07.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_07.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_08 {
-  background: url("../images/theme-skechbook/icon/sticker_08.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_08.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_09 {
-  background: url("../images/theme-skechbook/icon/sticker_09.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_09.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_10 {
-  background: url("../images/theme-skechbook/icon/sticker_10.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_10.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_11 {
-  background: url("../images/theme-skechbook/icon/sticker_11.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_11.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_12 {
-  background: url("../images/theme-skechbook/icon/sticker_12.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_12.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_13 {
-  background: url("../images/theme-skechbook/icon/sticker_13.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_13.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_14 {
-  background: url("../images/theme-skechbook/icon/sticker_14.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_14.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_15 {
-  background: url("../images/theme-skechbook/icon/sticker_15.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_15.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_16 {
-  background: url("../images/theme-skechbook/icon/sticker_16.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_16.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_17 {
-  background: url("../images/theme-skechbook/icon/sticker_17.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_17.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_18 {
-  background: url("../images/theme-skechbook/icon/sticker_18.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_18.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenu__list .btn.sticker_19 {
-  background: url("../images/theme-skechbook/icon/sticker_19.png") 0 0/100% no-repeat;
+  background: url("../images/icon/sticker_19.png") 0 0/100% no-repeat;
 }
 .sketchbook__wrap .subMenuWrap {
   display: none;
@@ -519,7 +519,7 @@ html {
 .sketchbook__wrap .colorPicker.active .btn__colorPicker:after {
   width: 16px;
   height: 16px;
-  background: url(../images/theme-skechbook/icon/i_pickerclose.png) 50% 50%/100% no-repeat;
+  background: url(../images/icon/i_pickerclose.png) 50% 50%/100% no-repeat;
 }
 .sketchbook__wrap .colorPicker__wrap {
   display: none;
@@ -557,7 +557,7 @@ html {
 .sketchbook__wrap .colorPicker__move {
   width: 100%;
   height: 25px;
-  background: url(../images/theme-skechbook/icon/i_move.png) 50% 50%/26px 6px no-repeat;
+  background: url(../images/icon/i_move.png) 50% 50%/26px 6px no-repeat;
   cursor: move;
 }
 .sketchbook__wrap .colorPicker__select {
@@ -639,7 +639,7 @@ html {
 .sketchbook__wrap .zoomTool__status input[type=range]::-webkit-slider-thumb {
   width: 23px;
   height: 32px;
-  background: url(../images/theme-skechbook/icon/i_range.png) 0% 0%/23px 28px no-repeat;
+  background: url(../images/icon/i_range.png) 0% 0%/23px 28px no-repeat;
   z-index: 1;
   -webkit-appearance: none;
 }
@@ -655,31 +655,31 @@ html {
   margin-right: 14px;
   width: 46px;
   height: 42px;
-  background: url(../images/theme-skechbook/icon/i_pencle.png) 0 0/100% no-repeat;
+  background: url(../images/icon/i_pencle.png) 0 0/100% no-repeat;
 }
 .sketchbook .icon__delete {
   margin-right: 9px;
   width: 19px;
   height: 24px;
-  background: url(../images/theme-skechbook/icon/i_del.png) 0 0/100% no-repeat;
+  background: url(../images/icon/i_del.png) 0 0/100% no-repeat;
 }
 .sketchbook .icon__note {
   margin-right: 8px;
   width: 23px;
   height: 24px;
-  background: url(../images/theme-skechbook/icon/i_note.png) 0 0/100% no-repeat;
+  background: url(../images/icon/i_note.png) 0 0/100% no-repeat;
 }
 .sketchbook .icon__check {
   margin-right: 15px;
   width: 19px;
   height: 15px;
-  background: url(../images/theme-skechbook/icon/i_check.png) 0 0/100% no-repeat;
+  background: url(../images/icon/i_check.png) 0 0/100% no-repeat;
 }
 .sketchbook .icon__learn {
   margin-right: 8px;
   width: 22px;
   height: 22px;
-  background: url(../images/theme-skechbook/icon/i_learn.png) 0 0/100% no-repeat;
+  background: url(../images/icon/i_learn.png) 0 0/100% no-repeat;
 }
 .sketchbook button {
   border: 0;
@@ -695,19 +695,19 @@ html {
 .sketchbook .btn__close {
   width: 29px;
   height: 29px;
-  background: url(../images/theme-skechbook/icon/i_close.png) 0 0/100% no-repeat;
+  background: url(../images/icon/i_close.png) 0 0/100% no-repeat;
 }
 .sketchbook .btn__undo {
-  background: url(../images/theme-skechbook/icon/btn_undo.png) 0 0/100% no-repeat;
+  background: url(../images/icon/btn_undo.png) 0 0/100% no-repeat;
 }
 .sketchbook .btn__undo.disabled {
-  background: url(../images/theme-skechbook/icon/btn_undo_disabled.png) 0 0/100% no-repeat;
+  background: url(../images/icon/btn_undo_disabled.png) 0 0/100% no-repeat;
 }
 .sketchbook .btn__redo {
-  background: url(../images/theme-skechbook/icon/btn_redo.png) 0 0/100% no-repeat;
+  background: url(../images/icon/btn_redo.png) 0 0/100% no-repeat;
 }
 .sketchbook .btn__redo.disabled {
-  background: url(../images/theme-skechbook/icon/btn_redo_disabled.png) 0 0/100% no-repeat;
+  background: url(../images/icon/btn_redo_disabled.png) 0 0/100% no-repeat;
 }
 .sketchbook .btn__use {
   padding: 0 5px;
@@ -786,7 +786,7 @@ html {
   left: 50%;
   width: 28px;
   height: 28px;
-  background: url(../images/theme-skechbook/icon/i_picker.png) 50% 50%/100% no-repeat;
+  background: url(../images/icon/i_picker.png) 50% 50%/100% no-repeat;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -797,18 +797,18 @@ html {
   height: 24px;
 }
 .sketchbook .btn__up {
-  background: url(../images/theme-skechbook/icon/btn_up.png) 50% 50%/21px 14px no-repeat;
+  background: url(../images/icon/btn_up.png) 50% 50%/21px 14px no-repeat;
 }
 .sketchbook .btn__up:disabled {
-  background: url(../images/theme-skechbook/icon/btn_up_disabled.png) 50% 50%/21px 14px no-repeat;
+  background: url(../images/icon/btn_up_disabled.png) 50% 50%/21px 14px no-repeat;
   pointer-events: none;
   opacity: 0.7;
 }
 .sketchbook .btn__down {
-  background: url(../images/theme-skechbook/icon/btn_down.png) 50% 50%/21px 14px no-repeat;
+  background: url(../images/icon/btn_down.png) 50% 50%/21px 14px no-repeat;
 }
 .sketchbook .btn__down:disabled {
-  background: url(../images/theme-skechbook/icon/btn_down_disabled.png) 50% 50%/21px 14px no-repeat;
+  background: url(../images/icon/btn_down_disabled.png) 50% 50%/21px 14px no-repeat;
   pointer-events: none;
   opacity: 0.7;
 }
@@ -973,18 +973,18 @@ html {
 .sketchbook .btn__zoom.reduction:after {
   width: 21px;
   height: 3px;
-  background: url(../images/theme-skechbook/icon/reduction.png);
+  background: url(../images/icon/reduction.png);
   background-size: 21px 3px;
 }
 .sketchbook .btn__zoom.enlargement:after {
   width: 21px;
   height: 21px;
-  background: url(../images/theme-skechbook/icon/enlargement.png);
+  background: url(../images/icon/enlargement.png);
   background-size: 21px 21px;
 }
 .sketchbook .btn__zoom.move:after {
   width: 25px;
   height: 25px;
-  background: url(../images/theme-skechbook/icon/move.png);
+  background: url(../images/icon/move.png);
   background-size: 25px 25px;
 }
