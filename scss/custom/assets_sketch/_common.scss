@@ -1,0 +1,103 @@
+
+//display
+.display{
+  &__block{
+      display: block;
+  }
+  &__iBlock{
+      display: inline-block;
+  }
+  &__table{
+      display: table;
+      > li,
+      &--cell{
+          display: table-cell;
+          vertical-align: middle;
+      }
+  }
+}
+
+// flex
+.flex{
+  display: flex;
+  &__align{
+    &--start{
+      justify-content: flex-start;
+    }
+    &--center{
+      justify-content: center;
+    }
+    &--end{
+      justify-content: flex-end;
+    }
+    &--beetween{
+      justify-content: space-between;
+    }
+    &--around{
+      justify-content: space-around;
+    }
+  }
+  &__vertical{
+    &--start{
+      align-items: flex-start;
+    }
+    &--center{
+      align-items: center;
+    }
+    &--end{
+      align-items: end;
+    }
+  }
+  &__column{
+    flex-direction: column;
+  }
+  &__mlAuto{
+    margin-left: auto;
+  }
+  &__mrAuto{
+    margin-right: auto;
+  }
+  &__wrap{
+    flex-wrap: wrap;
+  }
+}
+
+
+// align
+.align{
+  &__left{
+      text-align: left;
+  }
+  &__center{
+      text-align: center;
+  }
+  &__right{
+      text-align: right;
+  }
+}
+.vertical{
+  &__top{
+    vertical-align: top;
+  }
+  &__mid{
+    vertical-align: middle;
+  }
+  &__btm{
+    vertical-align: bottom;
+  }
+}
+
+.blind{
+  overflow:hidden;
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  padding:0;
+  clip:rect(0,0,0,0);
+  border:0
+}
+
+.ml__15{
+  margin-left: 15px;
+}

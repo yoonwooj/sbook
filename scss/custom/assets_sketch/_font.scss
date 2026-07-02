@@ -1,0 +1,37 @@
+// ========================================================================
+// [font] | 폰트
+// ========================================================================
+@font-face {
+	font-family: "TmoneyRoundWindWebFont";
+	font-weight: $base-normal;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url("https://xcdn.home-learn.com/homelearn/fonts/TmoneyRoundWind/TmoneyRoundWindRegular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "TmoneyRoundWindWebFont";
+	font-weight: $base-bold;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url("https://xcdn.home-learn.com/homelearn/fonts/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff") format("woff");
+}
+
+/* KoPub Batang */
+// @font-face {
+// 	font-family: "kpb";
+// 	font-weight: $base-normal;
+// 	font-style: normal;
+// 	font-display: swap;
+// 	src:
+// 		url("https://xcdn.home-learn.com/homelearn/fonts/KopubBatang/KoPubBatang-Regular.woff") format("woff");
+// }
+// @font-face {
+// 	font-family: "kpb";
+// 	font-weight: $base-bold;
+// 	font-style: normal;
+// 	font-display: swap;
+// 		src: url("https://xcdn.home-learn.com/homelearn/fonts/KopubBatang/KoPubBatang-Bold.woff") format("woff");
+// }

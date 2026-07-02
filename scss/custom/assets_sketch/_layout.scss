@@ -1,0 +1,417 @@
+
+
+.sketchbook__wrap{ 
+  position: absolute;
+  top:0;
+  left:0;
+  min-width: 1280px;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  *{
+    font-family: 'Nanum Gothic','TmoneyRoundWindWebFont', 'kpb', sans-serif; //-apple-system,"Apple SD Gothic Neo", 'NanumSquare', 'Malgun Gothic','맑은 고딕'
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+  }
+  :before, :after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    letter-spacing: -0.02em;
+  }
+  @at-root html{
+    background: transparent;
+  } 
+  .sketchbook{ 
+    height: 100%; 
+  } 
+  .header{
+    &__gnb{
+      position: relative;
+      padding: 0 12px;
+      height: 58px;
+      background: #35c4ff;
+      h1{
+        font-size: 30px;
+        font-family: "TmoneyRoundWindWebFont";
+        font-weight: $base-bold;
+        color: #222;
+        display: inline-flex;
+        align-items: center;
+      }      
+    }
+    &__sub{
+      height: 52px;
+      background: #e8f8ff;
+      border-bottom: 2px solid #cfe4ed;
+      box-shadow: 0 8px 0 rgba(0,0,0,0.012); 
+    }    
+  } 
+  .gnb{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: $x-center;   
+    &__inner{
+      overflow: hidden;
+      height: 58px;
+    }
+    &__list{
+      margin-left: 25px;
+      height: 50px;
+      &:first-child{
+        margin-left: 0;
+      }      
+      .btn{
+        position: relative;
+        width: 50px;
+        height: 50px;        
+      }
+      &.active{
+        .btn{
+          &:after{
+            content:'';
+            position: absolute;
+            bottom:-8px;
+            left:50%;
+            width: 16px;
+            height: 9px;
+            background: url(#{$bgPath}icon/btn_active.png) 0 0 / 100% no-repeat;
+            transform: $x-center;
+          }
+        }        
+      }      
+    }
+    @each $icons in (paper, brush, eraser, emoticon, shape){
+      .gnb__list.#{$icons}{
+        .btn{
+          background:url('#{$bgPath}icon/' + $icons + '.png') 0 0 / 100% no-repeat;
+        }
+        &.active{
+          .btn{
+            background:url('#{$bgPath}icon/' + $icons + '_on' + '.png') 0 0 / 100% no-repeat;
+          }
+        }
+      }
+    }
+  } // gnb  
+  .history{
+    position: relative;
+    margin-left: 25px;
+    &:after{
+      content: '';
+      position: absolute;
+      top:15px;
+      left:0;
+      width: 1px;
+      height: 28px;
+      background: #0eabec;
+    }
+    .btn{
+      width: 50px;
+      height: 50px;
+      margin-left: 25px;
+    }
+  } // history
+  
+  .info{
+    margin-left: auto;
+    margin-right: 25px;
+  }
+  .use{
+    &__list{ 
+      > p{ 
+        margin-left: 5px; 
+        font-size: 16px; 
+        font-weight: 800; 
+      } 
+    } 
+    &__inner{
+      padding: 3px 4px;
+      width: 107px;
+      background: rgba(0,0,0,.2);
+      border-radius: 18px;
+    }
+    &__check{
+      display: none;
+      + .use__label{
+        position: relative; 
+        padding-left: 17px; 
+        width: 107px; 
+        height: 30px; 
+        line-height: 30px; 
+        font-size: 17px; 
+        color: rgba(255,255,255,.4); 
+        font-weight: 800; 
+        z-index: 1; 
+        &:before, 
+        &:after{ 
+          position: absolute; 
+          top:0; 
+          padding: 0 5px; 
+          width: 50px; 
+          height: 30px; 
+          text-align: center; 
+          border-radius: 15px; 
+        } 
+        &:before{ 
+          content: "펜"; 
+          left: 0; 
+          background: #fff; 
+          color: #35c4ff; 
+        }
+        &:after{ 
+          content: "손"; 
+          right: 0px; 
+          color: #35c4ff; 
+        } 
+      } 
+    }
+    &__check:checked{
+      + .use__label{
+        &:before{ 
+          content: "손"; 
+          left:inherit; 
+          right:0; 
+        } 
+      } 
+    }  
+  } // use     
+  
+  .subMenu{
+    &__inner{
+      height: 35px;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+    &__list{
+      position: relative;
+      margin-left: 30px;
+      &:first-child{
+        margin-left: 0;
+      }
+      .btn{
+        position: relative;
+        width: 35px;
+        height: 35px;        
+      }
+      &.active{
+        &:after{
+          content:'';
+          position: absolute;
+          top:0;
+          left:0;
+          width: 35px;
+          height: 35px;
+          border-radius: 7px;
+          border: 2px solid #35c4ff;
+        }
+      }
+    }      
+  } // subMenu 
+  @each $icons in (pen, calligraphy, crayon, highlighter, spray, bucket, eraser1, eraser2, eraser3, line, rect, circle, ellipse, triangle, pentagon, hexagon, bubble, sticker_01, sticker_02, sticker_03, sticker_04, sticker_05, sticker_06, sticker_07, sticker_08, sticker_09, sticker_10, sticker_11, sticker_12, sticker_13, sticker_14, sticker_15, sticker_16, sticker_17, sticker_18, sticker_19){
+    .subMenu__list{
+      .btn.#{$icons}{ 
+        background:url('#{$bgPath}icon/' + $icons + '.png') 0 0 / 100% no-repeat; 
+      } 
+    } 
+  } 
+  .subMenuWrap{
+      display: none;
+      &.active{
+        display: block;
+      }
+  } // header  
+  
+  .delete__all{ 
+    display: none; 
+    position: relative; 
+    margin-left: 20px; 
+    padding-left: 20px; 
+    &.active{ 
+      display: block; 
+    } 
+    &:after{ 
+      content:''; 
+      position: absolute; 
+      top:5px; 
+      left:0; 
+      width: 1px; 
+      height: 28px; 
+      background: #cfe4ed; 
+    }
+  }
+  
+  .contents{
+    height: calc(100% - 110px); 
+    &__inner{ 
+      position: relative; 
+      height: 100%; 
+    } 
+    &__tab{ 
+      display: none; 
+      height: 100%; 
+      &.active{ 
+        display: block; 
+      } 
+    }    
+  } // contents
+
+  .btnarea{
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+    left:unset;
+  }
+  
+  .colorPicker{
+    position: absolute;
+    right:20px;
+    bottom:80px;
+    width: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    &.active{
+      .colorPicker__wrap{
+        display: block;
+      }
+      .btn__colorPicker{
+        &:after{
+          width: 16px;
+          height: 16px;    
+          background: url(#{$iconPath}/i_pickerclose.png) 50% 50% / 100% no-repeat;
+        }
+      }
+    }
+    &__wrap{
+      display: none;
+    }
+    &__inner{    
+      position: relative;
+      width: 58px;
+      border: 1px solid #cfe4ed;
+      border-radius: 14px;
+      background: #edf9ff;
+      box-shadow: 0 0 10px rgba(0,0,0,.12);
+      display: flex;
+      flex-direction: column;
+      &:after{
+        content:'';
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background: #edf9ff;
+        border-width: 0px 1px 1px 0;
+        border-style: solid;
+        border-color: #cfe4ed;
+        transform: $x-center rotate(45deg);
+      }
+    }
+    &__move{
+      width: 100%;
+      height: 25px;
+      background: url(#{$iconPath}/i_move.png) 50% 50% / 26px 6px no-repeat;
+      cursor: move;
+    }
+    &__select{
+      padding: 11px 0;
+      border-top: 1px solid #cfe4ed;
+    }
+    &__list{
+      margin: 10px 0;
+      padding: 2px 0;
+      height: 164px;
+      overflow: hidden;
+    }
+    &__scroll{
+      padding: 2px 0;
+      transition: .5s;
+      &.movey-1{
+        transform: translateY(0px);
+      }
+      &.movey-2{
+        transform: translateY(-168px);
+      }
+      &.movey-3{
+        transform: translateY(-336px);
+      }
+      &.movey-4{
+        transform: translateY(-504px);
+      }
+    }
+    &__eraser{
+      position: relative;
+      padding: 21px 0;
+      &:after{
+        content: '';
+        position: absolute;
+        top:0;
+        left:50%;
+        width: 45px;
+        height: 1px;
+        background: #cfe4ed;
+        transform: $x-center;
+      }
+    }
+  } // colorPicker
+  
+  .zoomTool{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    padding: 12px 20px;
+    width: 500px;
+    height: 65px;
+    background: #edf9ff;
+    border: 1px solid #cfe4ed;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.12);
+    transform: $x-center;  
+    &__status{
+      margin: 0 15px;
+      input[type=range]{      
+        width: 300px;
+        height: 9px;
+        border-radius: 5px;
+        background: #d6e0e5;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      input[type=range]:focus {
+        outline: none;
+      }
+      input[type=range]::-webkit-slider-thumb {      
+        width: 23px;
+        height: 32px;
+        background: url(#{$iconPath}/i_range.png) 0% 0% / 23px 28px no-repeat;
+        z-index: 1;
+        -webkit-appearance: none;
+      }    
+    }
+  } // zoomTool
+}
+
+
+// color 
+.clr{
+  &__white{
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+

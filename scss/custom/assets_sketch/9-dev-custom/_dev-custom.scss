@@ -1,0 +1,105 @@
+// // ========================================================================
+// // [dev-custom] | 개발자 전용 scss
+// // ========================================================================
+// // 예복습 공통
+// // js 테마 | test-simple: 2023 NEW 디자인
+// .test-simple,
+// // js 테마 | theme-simple: 2023 NEW 디자인
+// .study-contents.theme-simple {
+// 	// 공통 - 스킨 - 하단
+// 	.skin-content-bottom {
+// 		// 스킨 - 하단 - 페이지네이션
+// 		.bottom-pagination {
+// 			// 211213 Front 수정
+// 			z-index: 50;
+// 		}
+// 	}
+// 	/*스킨단 위치 조정 */
+// 	.exppop {
+// 		// 211213 Front 수정
+// 		bottom: 136px;
+// 		// 211213 Front 수정
+// 		// 220128 choa | 팝업을 하단 회색 위에 올라갈 수 있도록 z-index 수정
+// 		z-index: 100;
+// 	}
+
+// 	/* 220128 choa | 팝업을 하단 회색 위에 올라갈 수 있도록 높이값 수정 633px -> 700px / z-index 수정 */
+// 	#exp-pop-box {
+// 		// 211213 Front 수정
+// 		top: 53px;
+// 		// 211213 Front 수정
+// 		height: 700px;
+// 		z-index: 100;
+// 	}
+// 	// 계산기
+
+// 	.calculation-box {
+// 		// 211213 Front 수정
+// 		z-index: 10;
+// 	}
+
+// 	.calculation-box li {
+// 		// 211213 Front 수정
+// 		margin-left: 3px;
+// 		margin-right: 3px;
+// 	}
+
+// 	#contents-frame-iframe {
+// 		position: absolute;
+// 		left: 0;
+// 		top: 52px;
+// 		width: 1280px;
+// 		height: 700px;
+// 		background-color: #fff;
+// 		overflow: hidden;
+
+// 		.contents-desc {
+// 			display: inline-block;
+// 			width: 100%;
+// 			height: 100%;
+// 			box-sizing: border-box;
+// 		}
+// 	}
+
+// 	#contents-frame-movieplayer {
+// 		position: absolute;
+// 		left: 0;
+// 		top: 52px;
+// 		width: 1280px;
+// 		height: 700px;
+// 		background-color: #fff;
+// 		overflow: hidden;
+// 		z-index: 10;
+
+// 		.contents-desc {
+// 			display: inline-block;
+// 			width: 100%;
+// 			height: 100%;
+// 			box-sizing: border-box;
+// 		}
+// 	}
+
+// 	#event-block {
+// 		position: absolute;
+// 		left: 0;
+// 		top: 0;
+// 		width: 1280px;
+// 		height: 752px;
+// 		// background-color: rgba(0,0,0,0.5);
+// 		display: none;
+// 		z-index: 50;
+// 	}
+
+// 	/* 220407 dmahn 정렬 추가 */
+// 	.txt-align{ margin: 0 auto; text-align: center}
+// 	.txt-center{ margin: 0 auto; text-align: center}
+// 	.txt-left{ text-align: left}
+// 	.txt-right{ text-align: right}
+// 	.tl{ text-align: left}
+// 	.tr{ text-align: right}
+// 	.pos-center{ margin: 0 auto; text-align: center}
+// 	.pos-left{ margin: 0; text-align: left}
+// 	.vt{ vertical-align: top}
+// 	.vb{ vertical-align: bottom}
+// 	.vm{ vertical-align: middle}
+// }

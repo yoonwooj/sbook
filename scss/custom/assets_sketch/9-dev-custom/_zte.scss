@@ -1,0 +1,176 @@
+
+
+// html{
+// 	&.zte{
+// 		position:fixed;
+// 		body{
+// 			height:768px !important;
+// 		}
+// 		.study-contents{
+// 			// js 테마 | theme-simple: 2023 NEW 디자인
+// 			&.theme-simple{
+// 				height:768px !important;
+// 				.common-stem .stem-list:after{
+// 					bottom:-43px; 	
+// 				}
+// 				.main-study-intro .intro-directory{
+// 					height:768px !important;
+// 					background-size: 1280px 768px
+// 				}
+// 				.skin-content-top{
+// 					height:68px;
+// 					.top-view {
+// 						height:68px;
+// 						.view-unit-name{
+// 							height:68px;
+// 						}
+// 						.view-unit-add{
+// 							right: -30px;
+// 							height:68px;
+// 							margin-top:-34px;
+// 							border-top-right-radius: 34px;
+// 							border-bottom-right-radius: 34px;
+// 						}
+// 					}
+// 					.top-menu{
+// 						height:68px;
+// 						.menu-list {
+// 							.menu-list-step:before{
+// 								left:-29px;
+// 								height:99%;
+// 							}
+// 							.menu-list-step:after{
+// 								right:-29px;
+// 								height:99%;
+// 								border-top-right-radius: 34px;
+// 								border-bottom-right-radius: 34px;
+// 							}
+// 							.menu-list-step .step-txt{
+// 								margin-left:20px;
+// 							}
+// 						}
+// 					}
+// 					.top-extra{
+// 						top:8px;
+// 					}
+// 					.top-close{
+// 						top:8px;
+// 					}
+// 				}
+// 				#exp-pop-box{
+// 					top:69px;
+// 				}
+// 				#sketch-box{
+// 					height:768px;
+// 				}
+// 				.practice-btn{
+// 					top:71px;
+// 				}
+// 				.supplies-btn{
+// 					top:71px;
+// 				}
+// 				.pop-wrap{
+// 					top:67px;
+// 					height: 701px;
+// 				}
+// 				.common-supplies .supplies-list{
+// 					top:77px;
+// 				}
+// 				.common-popup{
+// 					height:768px;
+// 				}
+// 			}	
+// 		}
+// 		.common-popup{
+// 			height:768px;
+// 		}
+// 		#contents-frame-iframe{
+// 			top:68px;
+// 		}
+// 		#contents-frame-movieplayer{
+// 			top:68px;
+// 		}
+// 	}
+// }
+// /*
+// .zte body{
+// 	height:768px !important;
+// }
+// .zte .study-contents{
+// 	height:768px !important;
+// }
+// .zte .common-stem .stem-list:after{
+// 	bottom:-43px; 	
+// }
+// .zte .main-study-intro .intro-directory{
+// 	height:768px !important;
+// 	background-size: 1280px 768px
+// }
+// .zte .common-popup{
+// 	height:768px;
+// }
+// .zte .skin-content-top{
+// 	height:68px;
+// }
+// .zte .skin-content-top .top-view .view-unit-name{
+// 	height:68px;
+// }
+// .zte .skin-content-top .top-view .view-unit-add{
+// 	right: -30px;
+// 	height:68px;
+// 	margin-top:-34px;
+// 	border-top-right-radius: 34px;
+// 	border-bottom-right-radius: 34px;
+// }
+// .zte .skin-content-top .top-view{
+// 	height:68px;
+// }
+// .zte .skin-content-top .top-menu{
+// 	height:68px;
+// }
+// .zte .skin-content-top .top-extra{
+// 	top:8px;
+// }
+// .zte #contents-frame-iframe{
+// 	top:68px;
+// }
+
+
+// .zte .skin-content-top .top-menu .menu-list .menu-list-step:before{
+// 	left:-29px;
+// 	height:99%;
+// }
+// .zte .skin-content-top .top-menu .menu-list .menu-list-step:after{
+// 	right:-29px;
+// 	height:99%;
+// 	border-top-right-radius: 34px;
+// 	border-bottom-right-radius: 34px;
+// }
+// .zte .skin-content-top .top-menu .menu-list .menu-list-step .step-txt{
+// 	margin-left:20px;
+// }
+// .zte #contents-frame-movieplayer{
+// 	top:68px;
+// }
+// .zte #exp-pop-box{
+// 	top:69px;
+// }
+// .zte .study-contents .practice-btn{
+// 	top:71px;
+// }
+// .zte .study-contents .supplies-btn{
+// 	top:71px;
+// }
+// .zte .common-supplies .supplies-list{
+// 	top:77px;
+// }
+// .zte .skin-content-top .top-close{
+// 	top:8px;
+// }
+// .zte #sketch-box{
+// 	height:768px;
+// }
+// .zte .study-contents .pop-wrap{
+// 	top:68px;
+// }
+// */

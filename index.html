@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>스케치북</title>
+<link rel="stylesheet" href="assets/css/theme-simple.css">
+<link rel="stylesheet" href="assets/css/theme-basic.css">
+<link rel="stylesheet" href="assets/css/theme-lower.css">
+<link rel="stylesheet" href="assets/css/theme-sketchbook.css">
+<body>
+    <div class="sketchbook__wrap">
+        <div class="sketchbook">
+            <div class="header">
+                <div class="header__gnb flex  flex__vertical--center flex__align--beetween">
+                    <h1 class="logo"><i class="icon icon__pencle"></i>스케치북</h1>
+                    <div class="gnb flex">
+                        <ul class="gnb__inner flex flex__vertical--center">
+                            <!-- 활성화 : active -->                            
+                        </ul>
+                        <div class="history flex flex__vertical--center">
+                            <!-- btn__undo,btn__redo 없을때 disabled 추가 -->
+                            <button class="btn btn__undo"><span class="blind">이전</span></button>
+                            <button class="btn btn__redo"><span class="blind">다음</span></button>
+                        </div>
+                    </div>
+
+                    <div class="info flex">
+                        <div class="use__list flex flex__vertical--center">
+                            <div class="use__inner flex">
+                                <input type="checkbox" id="use" class="use__check">
+                                <label for="use" class="use__label">펜</label>
+                            </div>
+                            <p class="clr__white">사용</p>
+                        </div>
+    
+                        <button class="btn btn__learning">
+                            <i class="icon icon__learn"></i>
+                            학습안내
+                        </button>
+                    </div>
+                    
+                    <button class="btn btn__close"><span class="blind">닫기</span></button>
+                </div><!--// sketchbook__header -->
+                <div class="header__sub flex flex__align--center flex__vertical--center">
+                    <div class="subMenuWrap active">
+                        <ul class="subMenu__inner flex"></ul>
+                    </div>
+                    <div class="subMenuWrap">
+                        <ul class="subMenu__inner flex"></ul>
+                    </div>
+                    <div class="subMenuWrap">
+                        <ul class="subMenu__inner flex"></ul>
+                    </div>
+                    <div class="subMenuWrap">
+                        <ul class="subMenu__inner flex"></ul>
+                    </div>
+                    
+                    <!-- delete__all : 지우개 영역에서만 노출 active -->
+                    <div class="delete__all">
+                        <button class="btn btn__delete"><i class="icon icon__delete"></i>전체 지우기</button>
+                    </div>                
+                </div><!--// subMenu -->
+            </div>
+            
+            <div class="contents">
+                <div class="contents__inner">
+                    <div class="contents__paper">
+
+                    </div>
+                    <!-- colorPicker : active( colorPicker__wrap : display:block)-->
+                    <div class="colorPicker active">
+                        <button class="btn btn__colorPicker"><span class="blind">컬러픽커 열고닫기</span></button>
+                        <div class="colorPicker__wrap">
+                            <div class="colorPicker__inner">
+                                <button class="colorPicker__move"></button>
+                                <div class="colorPicker__select">
+                                    <!-- btn__up,btn__down disable 추가 disabled -->
+                                    <button class="btn btn__up"><span class="blind">위로</span></button>
+                                    <div class="colorPicker__list">
+                                        <!-- colorPicker__scroll 추가 btn__up,btn__down 클릭 시 transform: translateY(-42px); 42픽셀 간격으로 이동 -->
+                                        <div class="colorPicker__scroll">
+                                            
+                                        </div>
+                                    </div><!-- // colorPicker__list -->
+                                    <button class="btn btn__down"><span class="blind">아래로</span></button>  
+                                </div><!-- // colorPicker__select -->
+                                <div class="colorPicker__eraser">
+                                    
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                    <!-- // colorPicker -->
+
+                    <div class="zoomTool">
+                        <div class="flex">
+                            <button class="btn brn btn__zoom reduction"><span class="blind">축소</span></button>
+                            <div class="zoomTool__status flex flex__vertical--center">
+                                <input type="range" min="0" max="100" step="5" value="50" class="zoomRange">
+                            </div>
+                            <button class="btn brn btn__zoom enlargement"><span class="blind">확대</span></button>
+                            <!-- move 활성 : active-->
+                            <button class="btn brn btn__zoom move active ml__15"><span class="blind">이동</span></button>
+                        </div>
+                    </div>
+                    <!-- // zoomTool -->
+                </div>               
+                
+                <div class="btnarea">
+                    <!-- <button class="btn btn__normal btn__normal--wht"><i class="icon icon__note"></i>정리노트</button> -->
+                    <button class="btn btn__normal btn__normal--sky"><i class="icon icon__check"></i>다했어요</button>
+                </div>
+            </div><!--// contents -->
+        </div><!--// sketchbook -->
+    </div><!--// wrapper -->
+
+    <script src="assets/js/ui.js"></script>
+</body>
+</html>

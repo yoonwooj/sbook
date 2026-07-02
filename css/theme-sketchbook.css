@@ -1,0 +1,990 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "TmoneyRoundWindWebFont";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://xcdn.home-learn.com/homelearn/fonts/TmoneyRoundWind/TmoneyRoundWindRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "TmoneyRoundWindWebFont";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://xcdn.home-learn.com/homelearn/fonts/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff") format("woff");
+}
+/* KoPub Batang */
+.display__block {
+  display: block;
+}
+.display__iBlock {
+  display: inline-block;
+}
+.display__table {
+  display: table;
+}
+.display__table > li, .display__table--cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex__align--start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.flex__align--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flex__align--end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.flex__align--beetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flex__align--around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.flex__vertical--start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.flex__vertical--center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex__vertical--end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.flex__column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.flex__mlAuto {
+  margin-left: auto;
+}
+.flex__mrAuto {
+  margin-right: auto;
+}
+.flex__wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.align__left {
+  text-align: left;
+}
+.align__center {
+  text-align: center;
+}
+.align__right {
+  text-align: right;
+}
+
+.vertical__top {
+  vertical-align: top;
+}
+.vertical__mid {
+  vertical-align: middle;
+}
+.vertical__btm {
+  vertical-align: bottom;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.ml__15 {
+  margin-left: 15px;
+}
+
+.sketchbook__wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 1280px;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+.sketchbook__wrap * {
+  font-family: "Nanum Gothic", "TmoneyRoundWindWebFont", "kpb", sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.sketchbook__wrap :before, .sketchbook__wrap :after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  letter-spacing: -0.02em;
+}
+html {
+  background: transparent;
+}
+
+.sketchbook__wrap .sketchbook {
+  height: 100%;
+}
+.sketchbook__wrap .header__gnb {
+  position: relative;
+  padding: 0 12px;
+  height: 58px;
+  background: #35c4ff;
+}
+.sketchbook__wrap .header__gnb h1 {
+  font-size: 30px;
+  font-family: "TmoneyRoundWindWebFont";
+  font-weight: 700;
+  color: #222;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sketchbook__wrap .header__sub {
+  height: 52px;
+  background: #e8f8ff;
+  border-bottom: 2px solid #cfe4ed;
+  -webkit-box-shadow: 0 8px 0 rgba(0, 0, 0, 0.012);
+          box-shadow: 0 8px 0 rgba(0, 0, 0, 0.012);
+}
+.sketchbook__wrap .gnb {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.sketchbook__wrap .gnb__inner {
+  overflow: hidden;
+  height: 58px;
+}
+.sketchbook__wrap .gnb__list {
+  margin-left: 25px;
+  height: 50px;
+}
+.sketchbook__wrap .gnb__list:first-child {
+  margin-left: 0;
+}
+.sketchbook__wrap .gnb__list .btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.sketchbook__wrap .gnb__list.active .btn:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 16px;
+  height: 9px;
+  background: url(../images/theme-skechbook/icon/btn_active.png) 0 0/100% no-repeat;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.sketchbook__wrap .gnb .gnb__list.paper .btn {
+  background: url("../images/theme-skechbook/icon/paper.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.paper.active .btn {
+  background: url("../images/theme-skechbook/icon/paper_on.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.brush .btn {
+  background: url("../images/theme-skechbook/icon/brush.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.brush.active .btn {
+  background: url("../images/theme-skechbook/icon/brush_on.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.eraser .btn {
+  background: url("../images/theme-skechbook/icon/eraser.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.eraser.active .btn {
+  background: url("../images/theme-skechbook/icon/eraser_on.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.emoticon .btn {
+  background: url("../images/theme-skechbook/icon/emoticon.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.emoticon.active .btn {
+  background: url("../images/theme-skechbook/icon/emoticon_on.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.shape .btn {
+  background: url("../images/theme-skechbook/icon/shape.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .gnb .gnb__list.shape.active .btn {
+  background: url("../images/theme-skechbook/icon/shape_on.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .history {
+  position: relative;
+  margin-left: 25px;
+}
+.sketchbook__wrap .history:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 1px;
+  height: 28px;
+  background: #0eabec;
+}
+.sketchbook__wrap .history .btn {
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+}
+.sketchbook__wrap .info {
+  margin-left: auto;
+  margin-right: 25px;
+}
+.sketchbook__wrap .use__list > p {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.sketchbook__wrap .use__inner {
+  padding: 3px 4px;
+  width: 107px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+}
+.sketchbook__wrap .use__check {
+  display: none;
+}
+.sketchbook__wrap .use__check + .use__label {
+  position: relative;
+  padding-left: 17px;
+  width: 107px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 800;
+  z-index: 1;
+}
+.sketchbook__wrap .use__check + .use__label:before, .sketchbook__wrap .use__check + .use__label:after {
+  position: absolute;
+  top: 0;
+  padding: 0 5px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+.sketchbook__wrap .use__check + .use__label:before {
+  content: "펜";
+  left: 0;
+  background: #fff;
+  color: #35c4ff;
+}
+.sketchbook__wrap .use__check + .use__label:after {
+  content: "손";
+  right: 0px;
+  color: #35c4ff;
+}
+.sketchbook__wrap .use__check:checked + .use__label:before {
+  content: "손";
+  left: inherit;
+  right: 0;
+}
+.sketchbook__wrap .subMenu__inner {
+  height: 35px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.sketchbook__wrap .subMenu__list {
+  position: relative;
+  margin-left: 30px;
+}
+.sketchbook__wrap .subMenu__list:first-child {
+  margin-left: 0;
+}
+.sketchbook__wrap .subMenu__list .btn {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.sketchbook__wrap .subMenu__list.active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  border: 2px solid #35c4ff;
+}
+.sketchbook__wrap .subMenu__list .btn.pen {
+  background: url("../images/theme-skechbook/icon/pen.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.calligraphy {
+  background: url("../images/theme-skechbook/icon/calligraphy.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.crayon {
+  background: url("../images/theme-skechbook/icon/crayon.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.highlighter {
+  background: url("../images/theme-skechbook/icon/highlighter.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.spray {
+  background: url("../images/theme-skechbook/icon/spray.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.bucket {
+  background: url("../images/theme-skechbook/icon/bucket.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.eraser1 {
+  background: url("../images/theme-skechbook/icon/eraser1.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.eraser2 {
+  background: url("../images/theme-skechbook/icon/eraser2.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.eraser3 {
+  background: url("../images/theme-skechbook/icon/eraser3.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.line {
+  background: url("../images/theme-skechbook/icon/line.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.rect {
+  background: url("../images/theme-skechbook/icon/rect.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.circle {
+  background: url("../images/theme-skechbook/icon/circle.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.ellipse {
+  background: url("../images/theme-skechbook/icon/ellipse.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.triangle {
+  background: url("../images/theme-skechbook/icon/triangle.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.pentagon {
+  background: url("../images/theme-skechbook/icon/pentagon.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.hexagon {
+  background: url("../images/theme-skechbook/icon/hexagon.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.bubble {
+  background: url("../images/theme-skechbook/icon/bubble.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_01 {
+  background: url("../images/theme-skechbook/icon/sticker_01.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_02 {
+  background: url("../images/theme-skechbook/icon/sticker_02.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_03 {
+  background: url("../images/theme-skechbook/icon/sticker_03.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_04 {
+  background: url("../images/theme-skechbook/icon/sticker_04.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_05 {
+  background: url("../images/theme-skechbook/icon/sticker_05.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_06 {
+  background: url("../images/theme-skechbook/icon/sticker_06.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_07 {
+  background: url("../images/theme-skechbook/icon/sticker_07.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_08 {
+  background: url("../images/theme-skechbook/icon/sticker_08.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_09 {
+  background: url("../images/theme-skechbook/icon/sticker_09.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_10 {
+  background: url("../images/theme-skechbook/icon/sticker_10.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_11 {
+  background: url("../images/theme-skechbook/icon/sticker_11.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_12 {
+  background: url("../images/theme-skechbook/icon/sticker_12.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_13 {
+  background: url("../images/theme-skechbook/icon/sticker_13.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_14 {
+  background: url("../images/theme-skechbook/icon/sticker_14.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_15 {
+  background: url("../images/theme-skechbook/icon/sticker_15.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_16 {
+  background: url("../images/theme-skechbook/icon/sticker_16.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_17 {
+  background: url("../images/theme-skechbook/icon/sticker_17.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_18 {
+  background: url("../images/theme-skechbook/icon/sticker_18.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenu__list .btn.sticker_19 {
+  background: url("../images/theme-skechbook/icon/sticker_19.png") 0 0/100% no-repeat;
+}
+.sketchbook__wrap .subMenuWrap {
+  display: none;
+}
+.sketchbook__wrap .subMenuWrap.active {
+  display: block;
+}
+.sketchbook__wrap .delete__all {
+  display: none;
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.sketchbook__wrap .delete__all.active {
+  display: block;
+}
+.sketchbook__wrap .delete__all:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 1px;
+  height: 28px;
+  background: #cfe4ed;
+}
+.sketchbook__wrap .contents {
+  height: calc(100% - 110px);
+}
+.sketchbook__wrap .contents__inner {
+  position: relative;
+  height: 100%;
+}
+.sketchbook__wrap .contents__tab {
+  display: none;
+  height: 100%;
+}
+.sketchbook__wrap .contents__tab.active {
+  display: block;
+}
+.sketchbook__wrap .btnarea {
+  display: block;
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  left: unset;
+}
+.sketchbook__wrap .colorPicker {
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sketchbook__wrap .colorPicker.active .colorPicker__wrap {
+  display: block;
+}
+.sketchbook__wrap .colorPicker.active .btn__colorPicker:after {
+  width: 16px;
+  height: 16px;
+  background: url(../images/theme-skechbook/icon/i_pickerclose.png) 50% 50%/100% no-repeat;
+}
+.sketchbook__wrap .colorPicker__wrap {
+  display: none;
+}
+.sketchbook__wrap .colorPicker__inner {
+  position: relative;
+  width: 58px;
+  border: 1px solid #cfe4ed;
+  border-radius: 14px;
+  background: #edf9ff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sketchbook__wrap .colorPicker__inner:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #edf9ff;
+  border-width: 0px 1px 1px 0;
+  border-style: solid;
+  border-color: #cfe4ed;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+}
+.sketchbook__wrap .colorPicker__move {
+  width: 100%;
+  height: 25px;
+  background: url(../images/theme-skechbook/icon/i_move.png) 50% 50%/26px 6px no-repeat;
+  cursor: move;
+}
+.sketchbook__wrap .colorPicker__select {
+  padding: 11px 0;
+  border-top: 1px solid #cfe4ed;
+}
+.sketchbook__wrap .colorPicker__list {
+  margin: 10px 0;
+  padding: 2px 0;
+  height: 164px;
+  overflow: hidden;
+}
+.sketchbook__wrap .colorPicker__scroll {
+  padding: 2px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.sketchbook__wrap .colorPicker__scroll.movey-1 {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.sketchbook__wrap .colorPicker__scroll.movey-2 {
+  -webkit-transform: translateY(-168px);
+          transform: translateY(-168px);
+}
+.sketchbook__wrap .colorPicker__scroll.movey-3 {
+  -webkit-transform: translateY(-336px);
+          transform: translateY(-336px);
+}
+.sketchbook__wrap .colorPicker__scroll.movey-4 {
+  -webkit-transform: translateY(-504px);
+          transform: translateY(-504px);
+}
+.sketchbook__wrap .colorPicker__eraser {
+  position: relative;
+  padding: 21px 0;
+}
+.sketchbook__wrap .colorPicker__eraser:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 45px;
+  height: 1px;
+  background: #cfe4ed;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.sketchbook__wrap .zoomTool {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 12px 20px;
+  width: 500px;
+  height: 65px;
+  background: #edf9ff;
+  border: 1px solid #cfe4ed;
+  border-radius: 30px 30px 0 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.sketchbook__wrap .zoomTool__status {
+  margin: 0 15px;
+}
+.sketchbook__wrap .zoomTool__status input[type=range] {
+  width: 300px;
+  height: 9px;
+  border-radius: 5px;
+  background: #d6e0e5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.sketchbook__wrap .zoomTool__status input[type=range]:focus {
+  outline: none;
+}
+.sketchbook__wrap .zoomTool__status input[type=range]::-webkit-slider-thumb {
+  width: 23px;
+  height: 32px;
+  background: url(../images/theme-skechbook/icon/i_range.png) 0% 0%/23px 28px no-repeat;
+  z-index: 1;
+  -webkit-appearance: none;
+}
+
+.clr__white {
+  color: #fff;
+}
+
+.sketchbook .icon {
+  display: inline-block;
+}
+.sketchbook .icon__pencle {
+  margin-right: 14px;
+  width: 46px;
+  height: 42px;
+  background: url(../images/theme-skechbook/icon/i_pencle.png) 0 0/100% no-repeat;
+}
+.sketchbook .icon__delete {
+  margin-right: 9px;
+  width: 19px;
+  height: 24px;
+  background: url(../images/theme-skechbook/icon/i_del.png) 0 0/100% no-repeat;
+}
+.sketchbook .icon__note {
+  margin-right: 8px;
+  width: 23px;
+  height: 24px;
+  background: url(../images/theme-skechbook/icon/i_note.png) 0 0/100% no-repeat;
+}
+.sketchbook .icon__check {
+  margin-right: 15px;
+  width: 19px;
+  height: 15px;
+  background: url(../images/theme-skechbook/icon/i_check.png) 0 0/100% no-repeat;
+}
+.sketchbook .icon__learn {
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
+  background: url(../images/theme-skechbook/icon/i_learn.png) 0 0/100% no-repeat;
+}
+.sketchbook button {
+  border: 0;
+}
+.sketchbook .btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sketchbook .btn__close {
+  width: 29px;
+  height: 29px;
+  background: url(../images/theme-skechbook/icon/i_close.png) 0 0/100% no-repeat;
+}
+.sketchbook .btn__undo {
+  background: url(../images/theme-skechbook/icon/btn_undo.png) 0 0/100% no-repeat;
+}
+.sketchbook .btn__undo.disabled {
+  background: url(../images/theme-skechbook/icon/btn_undo_disabled.png) 0 0/100% no-repeat;
+}
+.sketchbook .btn__redo {
+  background: url(../images/theme-skechbook/icon/btn_redo.png) 0 0/100% no-repeat;
+}
+.sketchbook .btn__redo.disabled {
+  background: url(../images/theme-skechbook/icon/btn_redo_disabled.png) 0 0/100% no-repeat;
+}
+.sketchbook .btn__use {
+  padding: 0 5px;
+  min-width: 45px;
+  height: 30px;
+  font-size: 17px;
+  font-weight: 800;
+  border-radius: 15px;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sketchbook .btn__use.active {
+  background: #fff;
+  color: #35c4ff;
+}
+.sketchbook .btn__learning {
+  margin-left: 17px;
+  padding: 7px;
+  min-width: 120px;
+  border-radius: 18px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.2);
+}
+.sketchbook .btn__delete {
+  padding: 0 13px;
+  height: 35px;
+  font-size: 17px;
+  color: #607985;
+  font-weight: 800;
+  background: #fff;
+  border-radius: 7px;
+}
+.sketchbook .btn__normal {
+  padding: 0 16px;
+  min-width: 116px;
+  height: 41px;
+  font-size: 20px;
+  font-weight: 800;
+  border: 2px solid #37c2fc;
+  border-radius: 23px;
+  vertical-align: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sketchbook .btn__normal--wht {
+  color: #37c2fc;
+  background: #fff;
+}
+.sketchbook .btn__normal--sky {
+  color: #fff;
+  background: #37c2fc;
+}
+.sketchbook .btn__normal + .sketchbook .btn__normal {
+  margin-left: 15px;
+}
+.sketchbook .btn__colorPicker {
+  position: relative;
+  margin: 13px auto 0;
+  width: 51px;
+  height: 51px;
+  border: 1px solid #cfe4ed;
+  background: #edf9ff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.sketchbook .btn__colorPicker:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  background: url(../images/theme-skechbook/icon/i_picker.png) 50% 50%/100% no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.sketchbook .btn__up, .sketchbook .btn__down {
+  display: block;
+  margin: 0 auto;
+  width: 31px;
+  height: 24px;
+}
+.sketchbook .btn__up {
+  background: url(../images/theme-skechbook/icon/btn_up.png) 50% 50%/21px 14px no-repeat;
+}
+.sketchbook .btn__up:disabled {
+  background: url(../images/theme-skechbook/icon/btn_up_disabled.png) 50% 50%/21px 14px no-repeat;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.sketchbook .btn__down {
+  background: url(../images/theme-skechbook/icon/btn_down.png) 50% 50%/21px 14px no-repeat;
+}
+.sketchbook .btn__down:disabled {
+  background: url(../images/theme-skechbook/icon/btn_down_disabled.png) 50% 50%/21px 14px no-repeat;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.sketchbook .btn__color {
+  position: relative;
+  display: block;
+  margin: 12px auto 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.sketchbook .btn__color:first-child {
+  margin-top: 0;
+}
+.sketchbook .btn__color.active:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #37c3fc;
+  border-radius: 50%;
+}
+.sketchbook .btn__color.active:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.sketchbook .btn__color--l.active:before {
+  background: #000;
+}
+.sketchbook .btn__pendp {
+  position: relative;
+  display: block;
+  margin: 12px auto 0;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 7px;
+}
+.sketchbook .btn__pendp:first-child {
+  margin-top: 0;
+}
+.sketchbook .btn__pendp:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #000;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.sketchbook .btn__pendp.active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  border: 2px solid #35c4ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.sketchbook .btn__zoom {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+.sketchbook .btn__zoom:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.sketchbook .btn__zoom.move.active {
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+.sketchbook .btn__zoom.move.active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #35c4ff;
+  border-radius: 50%;
+}
+.sketchbook .btn__color--a {
+  background: #000;
+}
+.sketchbook .btn__color--b {
+  background: #ff2e2e;
+}
+.sketchbook .btn__color--c {
+  background: #ffc800;
+}
+.sketchbook .btn__color--d {
+  background: #02ad26;
+}
+.sketchbook .btn__color--e {
+  background: #00a0f4;
+}
+.sketchbook .btn__color--f {
+  background: #2f52eb;
+}
+.sketchbook .btn__color--g {
+  background: #7c35ff;
+}
+.sketchbook .btn__color--h {
+  background: #dd29fe;
+}
+.sketchbook .btn__color--i {
+  background: #89d200;
+}
+.sketchbook .btn__color--j {
+  background: #b87c26;
+}
+.sketchbook .btn__color--k {
+  background: #814d2e;
+}
+.sketchbook .btn__color--l {
+  background: #fff;
+}
+.sketchbook .btn__color--m {
+  background: #999;
+}
+.sketchbook .btn__pendp--small:after {
+  width: 3px;
+  height: 3px;
+}
+.sketchbook .btn__pendp--mid:after {
+  width: 10px;
+  height: 10px;
+}
+.sketchbook .btn__pendp--large:after {
+  width: 18px;
+  height: 18px;
+}
+.sketchbook .btn__pendp--xlarge:after {
+  width: 22px;
+  height: 22px;
+}
+.sketchbook .btn__zoom.reduction:after {
+  width: 21px;
+  height: 3px;
+  background: url(../images/theme-skechbook/icon/reduction.png);
+  background-size: 21px 3px;
+}
+.sketchbook .btn__zoom.enlargement:after {
+  width: 21px;
+  height: 21px;
+  background: url(../images/theme-skechbook/icon/enlargement.png);
+  background-size: 21px 21px;
+}
+.sketchbook .btn__zoom.move:after {
+  width: 25px;
+  height: 25px;
+  background: url(../images/theme-skechbook/icon/move.png);
+  background-size: 25px 25px;
+}
