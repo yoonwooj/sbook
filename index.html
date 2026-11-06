@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>스케치북</title>
-<link rel="stylesheet" href="css/theme-simple.css">
-<link rel="stylesheet" href="css/theme-basic.css">
-<link rel="stylesheet" href="css/theme-lower.css">
-<link rel="stylesheet" href="css/theme-sketchbook.css">
+<link rel="stylesheet" href="assets/css/theme-simple.css">
+<link rel="stylesheet" href="assets/css/theme-basic.css">
+<link rel="stylesheet" href="assets/css/theme-lower.css">
+<link rel="stylesheet" href="assets/css/theme-sketchbook.css?v=1.2">
+<link rel="stylesheet" href="assets/css/draw.css">
 <body>
     <div class="sketchbook__wrap">
         <div class="sketchbook">
@@ -94,7 +95,7 @@
                     </div>
                     <!-- // colorPicker -->
 
-                    <div class="zoomTool">
+                    <div class="zoomTool" draggable="true">
                         <div class="flex">
                             <button class="btn brn btn__zoom reduction"><span class="blind">축소</span></button>
                             <div class="zoomTool__status flex flex__vertical--center">
@@ -102,7 +103,7 @@
                             </div>
                             <button class="btn brn btn__zoom enlargement"><span class="blind">확대</span></button>
                             <!-- move 활성 : active-->
-                            <button class="btn brn btn__zoom move active ml__15"><span class="blind">이동</span></button>
+                            <button class="btn brn btn__zoom move ml__15"><span class="blind">이동</span></button>
                         </div>
                     </div>
                     <!-- // zoomTool -->
@@ -116,6 +117,8 @@
         </div><!--// sketchbook -->
     </div><!--// wrapper -->
 
-    <script src="js/ui.js"></script>
+    <script src="assets/js/ui.js?v=1.1"></script>
+    <script src="assets/js/stickers-data.js"></script>
+    <script src="assets/js/draw.js"></script>
 </body>
 </html>

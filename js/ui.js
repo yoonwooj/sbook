@@ -42,8 +42,8 @@ function subGnb(){
     let subname = [
         ["pen", "calligraphy", "crayon", "highlighter", "spray", "bucket"],
         ["eraser1", "eraser2", "eraser3"],
-        ["line", "rect", "circle", "ellipse", "triangle", "pentagon", "hexagon", "bubble"],
-        ["sticker_01", "sticker_02", "sticker_03", "sticker_04", "sticker_05", "sticker_06", "sticker_07", "sticker_08", "sticker_09", "sticker_10", "sticker_11", "sticker_12", "sticker_13", "sticker_14", "sticker_15", "sticker_16", "sticker_17", "sticker_18", "sticker_19"]
+        ["sticker_01", "sticker_02", "sticker_03", "sticker_04", "sticker_05", "sticker_06", "sticker_07", "sticker_08", "sticker_09", "sticker_10", "sticker_11", "sticker_12", "sticker_13", "sticker_14", "sticker_15", "sticker_16", "sticker_17", "sticker_18", "sticker_19"],
+        ["line", "rect", "circle", "ellipse", "triangle", "pentagon", "hexagon", "bubble"]
     ];  
 
     for (let i = 0; i < gnbTab.length; i++) {
@@ -180,37 +180,8 @@ function moveDown(){
     })
 }
 
-function zoomTools(){
-    let zoomP = document.querySelector('.btn__zoom.enlargement');
-    let zoomM = document.querySelector('.btn__zoom.reduction');
-    let zoomRange = document.querySelector('.zoomRange');
-    let zValue = zoomRange.value;
-    let sNum = Number(zValue);
-
-    zoomRange.addEventListener('input', (e)=>{
-    // console.log(sNum);
-        sNum = Number(this.value);         
-    });    
-    
-    zoomP.addEventListener('click', (e)=>{  
-        if(sNum <= 99){
-            zoomRange.stepUp(2);
-            sNum+=10;
-            // console.log(typeof sNum, sNum);
-        } else {
-            sNum == 100;
-        }
-    });
-
-    zoomM.addEventListener('click', (e)=>{
-        if(sNum == 0){
-            sNum == 0;
-        } else {
-            zoomRange.stepDown(2);
-            sNum-=10;
-        }
-    });
-}
+// 확대/축소는 draw.js 에서 처리합니다.
+function zoomTools(){}
 
 
 gnbMenu();

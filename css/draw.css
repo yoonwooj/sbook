@@ -1,0 +1,47 @@
+/* 스케치북 그리기 영역 */
+.sketchbook__wrap .contents__paper {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: #fff;
+    overflow: hidden;
+}
+.sketchbook__wrap .draw__canvas,
+.sketchbook__wrap .draw__live {
+    position: absolute;
+    top: 0; left: 0;
+}
+.sketchbook__wrap .draw__canvas {
+    cursor: crosshair;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+/* 형광펜 그리는 중 미리보기 (손 떼면 본 캔버스에 합쳐짐) */
+.sketchbook__wrap .draw__live {
+    pointer-events: none;
+    opacity: .4;
+    mix-blend-mode: multiply;
+}
+/* 붓/지우개 굵기 표시 원 */
+.sketchbook__wrap .draw__ring {
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    border: 1px solid rgba(0, 0, 0, .65);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 확대/이동되는 종이 */
+.sketchbook__wrap .contents__paper { background: #dfe8ed; }
+.sketchbook__wrap .draw__stage {
+    position: absolute;
+    top: 0; left: 0;
+    background: #fff;
+    transform-origin: 0 0;
+    will-change: transform;
+}
+.sketchbook__wrap .draw__stage.is-moved { box-shadow: 0 0 12px rgba(0, 0, 0, .18); }
+/* 도형/스티커 미리보기는 불투명 */
+.sketchbook__wrap .draw__live.is-solid { opacity: 1; mix-blend-mode: normal; }
